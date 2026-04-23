@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - Furry Tails Photography</title>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="container">
+      <div class="logo">
+        <a href="/">Furry Tails Photography</a>
+      </div>
+      <ul class="nav-links">
+        <li><a href="/">Home</a></li>
+        <li><a href="/how-it-works">How It Works</a></li>
+        <li><a href="/about">About Me</a></li>
+        <li><a href="/prices">Prices</a></li>
+        <li><a href="/gallery">Gallery</a></li>
+        <li><a href="/contact">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main>
+    <section class="page-header">
+      <div class="container">
+        <h1>Get in Touch</h1>
+        <p>Ready to book your pet's photoshoot? Contact me today!</p>
+      </div>
+    </section>
+
+    <section class="contact-section">
+      <div class="container">
+        <div class="contact-content">
+          <div class="contact-info">
+            <h2>Contact Information</h2>
+            <div class="info-item">
+              <h4>Email</h4>
+              <p><a href="mailto:hello@furrytails.com">hello@furrytails.com</a></p>
+            </div>
+            <div class="info-item">
+              <h4>Phone</h4>
+              <p><a href="tel:+1234567890">(123) 456-7890</a></p>
+            </div>
+            <div class="info-item">
+              <h4>Service Area</h4>
+              <p>Local area and surrounding regions. Happy to travel for sessions!</p>
+            </div>
+            <div class="info-item">
+              <h4>Response Time</h4>
+              <p>I typically respond within 24 hours.</p>
+            </div>
+          </div>
+
+          <div class="contact-form">
+            <h2>Send Me a Message</h2>
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+
+              <div class="form-group">
+                <label for="pet">Pet's Name & Type</label>
+                <input type="text" id="pet" name="pet" placeholder="e.g., Max the Golden Retriever" required>
+              </div>
+
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+              </div>
+
+              <button type="submit" class="cta-button">Send Message</button>
+            </form>
+            <p class="form-note">This is a demo form. For a working contact form, add backend processing or use a service like Formspree.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 Furry Tails Photography. All rights reserved.</p>
+      <p><a href="/contact">Get in touch</a></p>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Thank you for reaching out! I\'ll get back to you soon.');
+      this.reset();
+    });
+  </script>
+</body>
+</html>
