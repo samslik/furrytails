@@ -10,76 +10,101 @@
   <nav class="navbar">
     <div class="container">
       <div class="logo">
-        <a href="/">Furry Tails Photography</a>
+        <a href="/">
+          <img src="/gallery/logo.jpeg" alt="Logo" width="40" height="40">
+          Pet Photography
+        </a>
       </div>
-      <ul class="nav-links">
-        <li><a href="/">Home</a></li>
-        <li><a href="/how-it-works">How It Works</a></li>
-        <li><a href="/about">About Me</a></li>
-        <li><a href="/prices">Prices</a></li>
-        <li><a href="/gallery">Gallery</a></li>
-        <li><a href="/contact">Contact</a></li>
+      <button class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="/gallery">GALLERY</a></li>
+        <li><a href="/how-it-works">SESSIONS</a></li>
+        <li><a href="/prices">PRICES</a></li>
+        <li><a href="/">VOUCHERS</a></li>
+        <li><a href="/about">ABOUT</a></li>
+        <li><a href="/contact">CONTACT</a></li>
       </ul>
     </div>
   </nav>
 
   <main>
-    <section class="page-header">
+    <section class="contact-hero">
       <div class="container">
-        <h1>Get in Touch</h1>
-        <p>Ready to book your pet's photoshoot? Contact me today!</p>
-      </div>
-    </section>
+        <div class="contact-hero-content">
+          <div class="contact-info-box">
+            <div class="info-box-content">
+              <h2>Let's create something beautiful together</h2>
+              <p>Have questions or ready to book? I'd love to hear from you</p>
 
-    <section class="contact-section">
-      <div class="container">
-        <div class="contact-content">
-          <div class="contact-info">
-            <h2>Contact Information</h2>
-            <div class="info-item">
-              <h4>Email</h4>
-              <p><a href="mailto:hello@furrytails.com">hello@furrytails.com</a></p>
+              <div class="contact-details">
+                <div class="contact-detail-item">
+                  <img src="/gallery/mail white.png" alt="Email" width="24" height="24">
+                  <a href="mailto:hello@furrytails.com">hello@furrytails.com</a>
+                </div>
+                <div class="contact-detail-item">
+                  <img src="/gallery/phone white.png" alt="Phone" width="24" height="24">
+                  <a href="tel:+1234567890">+1 (234) 567-890</a>
+                </div>
+                <div class="contact-detail-item">
+                  <img src="/gallery/house white.png" alt="Location" width="24" height="24">
+                  <p>In-home Studio in Berlin Prenzlauer Berg</p>
+                </div>
+              </div>
             </div>
-            <div class="info-item">
-              <h4>Phone</h4>
-              <p><a href="tel:+1234567890">(123) 456-7890</a></p>
-            </div>
-            <div class="info-item">
-              <h4>Service Area</h4>
-              <p>Local area and surrounding regions. Happy to travel for sessions!</p>
-            </div>
-            <div class="info-item">
-              <h4>Response Time</h4>
-              <p>I typically respond within 24 hours.</p>
+            <div class="info-box-image">
+              <img src="/gallery/turqouse.jpeg" alt="Pet portrait" class="contact-pet-img">
             </div>
           </div>
 
-          <div class="contact-form">
-            <h2>Send Me a Message</h2>
-            <form id="contactForm">
-              <div class="form-group">
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" required>
+          <div class="contact-form-box">
+            <h3>SEND A MESSAGE</h3>
+            <form id="contactForm" class="contact-form">
+              <div class="form-row">
+                <div class="form-group">
+                  <input type="text" id="name" name="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group">
+                  <input type="email" id="email" name="email" placeholder="Email Address" required>
+                </div>
+              </div>
+
+              <div class="form-row">
+                <div class="form-group">
+                  <input type="tel" id="phone" name="phone" placeholder="Phone Number">
+                </div>
+                <div class="form-group">
+                  <input type="tel" id="phone2" name="phone2" placeholder="Phone Number">
+                </div>
               </div>
 
               <div class="form-group">
-                <label for="email">Email</label>
-                <input type="email" id="email" name="email" required>
+                <textarea id="message" name="message" placeholder="Your Message" rows="6" required></textarea>
               </div>
 
-              <div class="form-group">
-                <label for="pet">Pet's Name & Type</label>
-                <input type="text" id="pet" name="pet" placeholder="e.g., Max the Golden Retriever" required>
-              </div>
-
-              <div class="form-group">
-                <label for="message">Message</label>
-                <textarea id="message" name="message" rows="5" required></textarea>
-              </div>
-
-              <button type="submit" class="cta-button">Send Message</button>
+              <button type="submit" class="contact-submit-btn">SEND MESSAGE →</button>
             </form>
-            <p class="form-note">This is a demo form. For a working contact form, add backend processing or use a service like Formspree.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="contact-social">
+      <div class="container">
+        <div class="social-content">
+          <div class="social-icon">
+            <img src="/gallery/camera.png" alt="Instagram" width="48" height="48">
+          </div>
+          <div class="social-text">
+            <h2>Let's stay in touch</h2>
+            <p>If you're curious what my latest projects are, follow me on Instagram</p>
+          </div>
+          <a href="https://instagram.com" class="social-link">@furrytails_photography</a>
+          <div class="social-image">
+            <img src="/gallery/pink.jpeg" alt="Pet portrait" class="social-pet-img">
           </div>
         </div>
       </div>
@@ -88,12 +113,58 @@
 
   <footer>
     <div class="container">
-      <p>&copy; 2026 Furry Tails Photography. All rights reserved.</p>
-      <p><a href="/contact">Get in touch</a></p>
+      <div class="footer-grid">
+        <div class="footer-col">
+          <div class="footer-logo">
+            <img src="/gallery/logo.jpeg" alt="Logo" width="30" height="30">
+            <span>Pet Photography</span>
+          </div>
+          <p>Capturing the joy and personality of your beloved pets.</p>
+        </div>
+        <div class="footer-col">
+          <h4>QUICK LINKS</h4>
+          <ul>
+            <li><a href="/gallery">Gallery</a></li>
+            <li><a href="/how-it-works">Sessions</a></li>
+            <li><a href="/prices">Prices</a></li>
+            <li><a href="/about">About</a></li>
+            <li><a href="/contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>LET'S CONNECT</h4>
+          <ul>
+            <li><a href="https://instagram.com">Instagram</a></li>
+            <li><a href="tel:+1234567890">(123) 456-7890</a></li>
+            <li><a href="mailto:hello@furrytails.com">Email</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <a href="/contact" class="footer-cta">BOOK A SESSION</a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Furry Tails Pet Photography. All rights reserved.</p>
+      </div>
     </div>
   </footer>
 
   <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+    });
+
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navLinks.style.display = 'none';
+      });
+    });
+
     document.getElementById('contactForm').addEventListener('submit', function(e) {
       e.preventDefault();
       alert('Thank you for reaching out! I\'ll get back to you soon.');
