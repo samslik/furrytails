@@ -15,7 +15,12 @@
           Pet Photography
         </a>
       </div>
-      <ul class="nav-links">
+      <button class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <ul class="nav-links" id="nav-links">
         <li><a href="/gallery">GALLERY</a></li>
         <li><a href="/how-it-works">SESSIONS</a></li>
         <li><a href="/prices">PRICES</a></li>
@@ -168,5 +173,23 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const navLinks = document.getElementById('nav-links');
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.toggle('active');
+      navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
+    });
+
+    // Close menu when a link is clicked
+    navLinks.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', () => {
+        hamburger.classList.remove('active');
+        navLinks.style.display = 'none';
+      });
+    });
+  </script>
 </body>
 </html>
