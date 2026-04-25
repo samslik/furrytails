@@ -6,7 +6,10 @@
       "Bash(npm start *)",
       "Bash(git add *)",
       "Bash(git commit -m ' *)",
-      "Bash(git push *)"
+      "Bash(git push *)",
+      "Bash(curl -s http://localhost:3000/gallery)",
+      "Bash(curl -s http://localhost:3000/gallery/)",
+      "Bash(pkill -f \"node server.js\")"
     ]
   }
 }
