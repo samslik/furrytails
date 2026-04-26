@@ -225,6 +225,7 @@ h1, h2, h3, h4, h5, h6 {
   transition: all 0.3s;
   cursor: pointer;
   font-family: 'Inter', sans-serif;
+  white-space: nowrap;
 }
 
 .card-btn:hover {
@@ -242,13 +243,14 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Teal: Text left, Image right - 50% taller */
 .card-teal {
-  background: #5fa39a;
+  background: #39a291;
   color: #000;
   height: 360px;
   flex-shrink: 0;
   display: flex;
   justify-content: space-between;
   align-items: flex-start;
+  padding-right: 0;
 }
 
 .card-teal .card-text-container {
@@ -259,15 +261,15 @@ h1, h2, h3, h4, h5, h6 {
 
 .card-teal .card-image {
   position: absolute;
-  width: 180px;
-  height: 360px;
+  width: auto;
+  height: 100%;
   right: 0;
   top: 0;
 }
 
 /* Pink: Text centered top, Image bottom-left, subtitle and button at middle height of picture - 50% taller, image 30% bigger */
 .card-pink {
-  background: #e84a81;
+  background: #f0388f;
   color: #000;
   height: 472px;
   flex-shrink: 0;
@@ -390,7 +392,7 @@ h1, h2, h3, h4, h5, h6 {
 .pet-img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
   border-radius: 12px;
 }
 
@@ -1028,6 +1030,10 @@ footer {
     order: 2;
   }
 
+  .card-teal .card-image {
+    width: auto;
+  }
+
   .card-pink-bottom {
     position: relative;
     bottom: auto;
@@ -1061,24 +1067,30 @@ footer {
   .card-teal {
     height: auto;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    padding: 0;
+    gap: 0;
+    align-items: flex-start;
   }
 
   .card-teal .card-text-container {
     max-width: 100%;
-    padding-right: 0;
+    padding: 25px;
+    flex: 1;
   }
 
   .card-teal .card-image {
     position: relative !important;
-    width: 60%;
+    width: 300px;
     height: auto !important;
     flex-shrink: 0;
-    margin-top: 1.5rem;
-    margin-left: auto;
-    margin-right: 0;
     border-radius: 20px;
-    align-self: flex-end;
+    order: 2;
+  }
+
+  .card-teal .pet-img {
+    height: auto !important;
+    width: 300px;
   }
 
   .card-pink,
@@ -1155,6 +1167,23 @@ footer {
 }
 
 @media (max-width: 480px) {
+  .card-teal {
+    flex-direction: column;
+  }
+
+  .card-teal .card-text-container h2 {
+    padding-top: 25px;
+  }
+
+  .card-teal .card-image {
+    width: 100%;
+    margin: 0;
+  }
+
+  .card-teal .pet-img {
+    width: 100%;
+  }
+
   .navbar .container {
     flex-direction: row;
     justify-content: space-between;
@@ -1205,6 +1234,10 @@ footer {
     border-radius: 20px;
     padding: 25px;
     min-height: auto;
+  }
+
+  .card-teal {
+    padding: 0 !important;
   }
 
   .hero-card h2 {
