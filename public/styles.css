@@ -1035,6 +1035,37 @@ footer {
   }
 }
 
+@media (max-width: 940px) {
+  .gallery-cta-box {
+    flex-direction: row;
+    align-items: stretch;
+    height: 280px;
+    position: relative;
+  }
+
+  .gallery-cta-text {
+    flex: 0 0 auto;
+    padding: 0 30px 80px 30px;
+    justify-content: flex-start !important;
+  }
+
+  .gallery-cta-image {
+    flex: 1;
+    width: auto;
+    height: 100%;
+    order: 2;
+  }
+
+  .gallery-cta-button {
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+    width: auto;
+    padding: 0;
+    background: none;
+  }
+}
+
 @media (max-width: 1024px) and (min-width: 769px) {
   .hero-cards {
     flex-direction: column;
@@ -3940,10 +3971,10 @@ footer {
   color: #000;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   background: #39a291;
-  padding: 30px;
+  padding: 20px 30px 30px 30px;
 }
 
 .gallery-hero-text h2 {
@@ -3955,19 +3986,19 @@ footer {
 
 .gallery-hero-text p {
   font-family: 'Spectral', serif;
-  font-size: 0.95rem;
+  font-size: 1.1rem;
   margin: 0;
 }
 
 .gallery-hero-subtitle {
-  font-size: 0.85rem !important;
+  font-size: 1rem !important;
   margin-top: 5px;
   color: #000;
 }
 
 /* Gallery Grid Section */
 .gallery-grid-section {
-  padding: 0 0 5px 0;
+  padding: 0;
   margin: 0;
 }
 
@@ -4072,8 +4103,8 @@ footer {
 
 /* Gallery CTA Section */
 .gallery-cta {
-  padding: 15px 0;
-  margin-bottom: 0;
+  padding: 0 0 15px 0;
+  margin-bottom: 30px;
   background: #f5f5f5;
 }
 
@@ -4084,18 +4115,25 @@ footer {
 }
 
 .gallery-cta-box {
-  background: #ff4d7d;
-  padding: 25px 30px;
-  border-radius: 20px;
+  background: #eb4c74;
+  padding: 0;
+  border-radius: 30px;
   display: flex;
-  align-items: center;
+  align-items: stretch;
   justify-content: space-between;
-  gap: 20px;
+  gap: 0;
   margin: 0;
+  height: 280px;
+  overflow: hidden;
 }
 
 .gallery-cta-text {
-  flex: 1;
+  flex: 0 0 auto;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background: #eb4c74;
 }
 
 .gallery-cta-text h3 {
@@ -4113,11 +4151,11 @@ footer {
 }
 
 .gallery-cta-image {
-  flex: 0 0 100px;
-  width: 100px;
-  height: 130px;
+  flex: 0 0 auto;
+  width: auto;
+  height: 100%;
   overflow: hidden;
-  border-radius: 10px;
+  border-radius: 0;
 }
 
 .gallery-cta-image img {
@@ -4126,10 +4164,18 @@ footer {
   object-fit: cover;
 }
 
-.gallery-cta-btn {
+.gallery-cta-button {
   flex: 0 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  background: #eb4c74;
+}
+
+.gallery-cta-btn {
   background: #fff;
-  color: #ff4d7d;
+  color: #000;
   padding: 10px 24px;
   border-radius: 20px;
   text-decoration: none;
@@ -4185,11 +4231,11 @@ footer {
   }
   .gallery-hero {
     padding: 15px 0;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
   }
 
   .gallery-hero-box {
-    padding: 30px;
+    padding: 10px 30px 8px 30px;
     gap: 0;
     height: auto;
   }
@@ -4197,6 +4243,11 @@ footer {
   .gallery-hero-left,
   .gallery-hero-right {
     display: none;
+  }
+
+  .gallery-hero-text {
+    justify-content: flex-start;
+    padding: 5px 30px 20px 30px;
   }
 
   .gallery-hero-text h2 {
@@ -4210,7 +4261,7 @@ footer {
   .gallery-asymmetric-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 15px;
-    margin-bottom: 50px;
+    margin-bottom: 0;
   }
 
   .gallery-cta {
@@ -4269,7 +4320,7 @@ footer {
 
   .gallery-hero {
     padding: 0;
-    margin-bottom: 15px;
+    margin-bottom: 5px;
   }
 
   .gallery-hero .container {
@@ -4277,7 +4328,7 @@ footer {
   }
 
   .gallery-hero-box {
-    padding: 15px;
+    padding: 10px 15px 8px 15px;
     flex-direction: column;
     gap: 10px;
   }
@@ -4336,29 +4387,47 @@ footer {
   }
 
   .gallery-cta-box {
-    padding: 15px;
+    padding: 30px;
     flex-direction: column;
-    align-items: flex-start;
-    gap: 15px;
+    align-items: center;
+    gap: 0;
+    height: auto;
+    text-align: center;
   }
 
   .gallery-cta-text {
-    flex: 1;
+    flex: 0 0 auto;
+    margin-bottom: 20px;
   }
 
   .gallery-cta-text h3 {
-    font-size: 1.3rem;
+    font-size: 1.8rem;
   }
 
   .gallery-cta-text p {
-    font-size: 0.85rem;
+    font-size: 1rem;
+  }
+
+  .gallery-cta-button {
+    position: static;
+    width: auto;
+    padding: 0;
+    background: none;
+    margin-bottom: 20px;
   }
 
   .gallery-cta-image {
     flex: 0 0 auto;
-    width: 70px;
-    height: 100px;
+    width: 100%;
+    height: 300px;
     min-height: auto;
+    overflow: hidden;
+  }
+
+  .gallery-cta-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
   }
 
   .gallery-cta-btn {
