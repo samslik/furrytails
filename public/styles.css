@@ -3621,6 +3621,18 @@ footer {
 
 /* Responsive Prices */
 @media (max-width: 1200px) {
+  .footer-col:nth-child(2),
+  .footer-col:nth-child(3) {
+    text-align: center;
+  }
+
+  .footer-col:nth-child(4) {
+    grid-column: 1 / 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   .prices-cards-grid {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -4292,12 +4304,21 @@ footer {
 /* Mobile (max-width: 768px) */
 @media (max-width: 768px) {
   footer {
-    padding: 10px 20px 30px;
+    padding: 30px 20px 30px;
   }
 
   .footer-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
     gap: 20px;
+  }
+
+  .footer-col:first-child {
+    grid-column: 1 / -1;
+    margin-bottom: 10px;
+  }
+
+  .footer-col:nth-child(4) {
+    display: none;
   }
 
   .footer-col h4 {
