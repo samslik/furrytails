@@ -4318,7 +4318,10 @@ footer {
   }
 
   .footer-col:nth-child(4) {
-    display: none;
+    grid-column: 1 / -1;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
   }
 
   .footer-col h4 {
