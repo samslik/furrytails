@@ -2362,6 +2362,15 @@ footer {
   padding: 0 8px;
 }
 
+.timeline-step:not(:last-child)::after {
+  content: '→';
+  position: absolute;
+  right: -20px;
+  top: 17px;
+  font-size: 1.5rem;
+  color: #4db8a8;
+}
+
 .step-icon {
   width: 55px;
   height: 55px;
@@ -3789,17 +3798,32 @@ footer {
     font-size: 1.6rem;
   }
 
+  .experience-section {
+    display: none;
+  }
+
   .timeline-steps {
-    flex-wrap: wrap;
-    align-items: flex-start;
-    justify-content: center;
+    display: none;
   }
 
   .timeline-step {
-    flex: 0 1 calc(50% - 5px);
-    padding: 0 3px;
+    flex: 0 1 auto;
+    padding: 0;
     margin-right: 0;
-    min-width: 70px;
+    min-width: auto;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  .timeline-step:not(:last-child)::after {
+    content: '↓';
+    position: absolute;
+    right: auto;
+    top: 70px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.5rem;
+    color: #4db8a8;
   }
 
   .timeline-arrow {
@@ -3818,7 +3842,7 @@ footer {
   }
 
   .timeline-step p {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
   }
 }
 
