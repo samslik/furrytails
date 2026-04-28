@@ -2702,6 +2702,32 @@ footer {
   color: #fff;
 }
 
+.add-info-content {
+  display: flex;
+  gap: 30px;
+  align-items: stretch;
+}
+
+.add-info-text {
+  flex: 1;
+}
+
+.add-info-image {
+  flex-shrink: 0;
+  width: 160px;
+  height: 200px;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.add-info-image img {
+  height: 100%;
+  width: auto;
+  max-width: 100%;
+  object-fit: contain;
+}
+
 .add-info-pink {
   background-color: #eb4c74;
 }
@@ -2801,13 +2827,14 @@ footer {
 .print-sizes {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 8px;
   margin-top: 10px;
 }
 
 .print-row {
-  display: flex;
-  justify-content: space-between;
+  display: grid;
+  grid-template-columns: 1fr 60px;
+  gap: 15px;
   align-items: center;
 }
 
@@ -4107,8 +4134,31 @@ footer {
     padding: 30px;
   }
 
+  .add-info-content {
+    flex-direction: column;
+  }
+
+  .add-info-image {
+    width: 100% !important;
+    max-width: 400px !important;
+    height: auto !important;
+    margin-top: 20px;
+  }
+
+  .add-info-image img {
+    width: 100%;
+  }
+
   .add-info-box h3 {
     font-size: 1.4rem;
+  }
+
+  .print-sizes {
+    gap: 5px;
+  }
+
+  .print-row {
+    gap: 8px;
   }
 
   .prices-faq {
