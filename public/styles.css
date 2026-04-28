@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Anton&family=Spectral:wght@400;500;600;700&family=Cochin&family=Inter:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Spectral:wght@400;500;600;700&family=Cochin&family=Inter:wght@400;500;600;700&family=Caveat:wght@400;500;600;700&display=swap');
 
 * {
   margin: 0;
@@ -4253,7 +4253,7 @@ footer {
   color: #0c5b7c;
   margin-top: 0;
   margin-left: 30px;
-  font-size: 1.1rem;
+  font-size: 1.15rem;
 }
 
 .session-left strong {
@@ -4264,13 +4264,17 @@ footer {
   list-style: disc;
   padding: 0;
   margin: 0 0 8px 0;
-  margin-left: 10px;
+  margin-left: 30px;
   padding-left: 25px;
+}
+
+.session-left > p:nth-of-type(2) {
+  margin-left: 30px;
 }
 
 .session-left li {
   font-family: 'Spectral', serif;
-  font-size: 1.05rem;
+  font-size: 1.15rem;
   line-height: 1.4;
   margin-bottom: 3px;
 }
@@ -4325,6 +4329,12 @@ footer {
   box-sizing: border-box;
 }
 
+.session-during .session-overlay {
+  background-color: rgb(243 176 123 / 52%);
+  border: 1px solid #4e2403;
+  padding-top: 5px;
+}
+
 .session-overlay p {
   font-family: 'Anton', sans-serif;
   font-size: 0.85rem;
@@ -4333,6 +4343,10 @@ footer {
   color: #000;
   text-align: center;
   padding-bottom: 10px;
+}
+
+.session-during .session-overlay p {
+  padding-bottom: 0;
 }
 
 .overlay-items {
@@ -4363,11 +4377,105 @@ footer {
 }
 
 .session-during {
-  background-color: #eb4c74;
+  background-color: #a9642b;
+}
+
+.session-during .session-badge {
+  color: #4e2403;
+}
+
+.session-during > .session-left > p:first-of-type {
+  color: #000;
+  font-size: 1.15rem;
+  font-weight: normal;
+  margin-left: 30px;
+}
+
+.session-during > .session-left > p:nth-of-type(2) {
+  color: #4e2403;
+  font-weight: 700;
+}
+
+.session-during .session-important-box {
+  background-color: rgba(169, 100, 43, 0.1);
+  border: 1px solid #4e2403;
+}
+
+.session-during .session-important-box svg {
+  color: #4e2403;
+}
+
+.session-during .session-important-box p:first-child {
+  color: #4e2403;
+}
+
+.session-during .overlay-item svg {
+  color: #4e2403;
+}
+
+.session-during ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.session-during li {
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 8px;
+}
+
+.session-during li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 2px;
+  width: 20px;
+  height: 20px;
+  background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="%234e2403" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21.801 10A10 10 0 1 1 17 3.335"/><path d="m9 11 3 3L22 4"/></svg>');
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.session-during .session-overlay p {
+  font-family: 'Caveat', cursive;
+  font-size: 1.5rem;
+}
+
+.session-during .overlay-item {
+  border-bottom: 0.5px solid #4e2403;
+  padding-bottom: 5px;
 }
 
 .session-after {
-  background-color: #9e5c2a;
+  background-color: #6cbfcd;
+}
+
+.session-after .session-badge {
+  color: #6d3f16;
+}
+
+.session-after > .session-left > p:first-of-type {
+  color: #000;
+  font-size: 1.15rem;
+  font-weight: normal;
+  margin-left: 30px;
+}
+
+.session-after .session-important-box {
+  background-color: rgba(158, 92, 42, 0.1);
+  border: 1px solid #6d3f16;
+}
+
+.session-after .session-important-box svg {
+  color: #6d3f16;
+}
+
+.session-after .session-important-box p:first-child {
+  color: #6d3f16;
+}
+
+.session-after .overlay-item svg {
+  color: #6cbfcd;
 }
 
 /* Gallery Styles */
