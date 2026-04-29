@@ -4451,7 +4451,7 @@ footer {
 }
 
 .session-after .session-badge {
-  color: #6d3f16;
+  color: #76bbab;
 }
 
 .session-after > .session-left > p:first-of-type {
@@ -4476,6 +4476,14 @@ footer {
 
 .session-after .overlay-item svg {
   color: #6cbfcd;
+}
+
+.session-after .session-right {
+  align-items: flex-start;
+}
+
+.session-after .session-right img {
+  padding-top: 30px;
 }
 
 /* Gallery Styles */
@@ -4963,6 +4971,10 @@ footer {
     flex-direction: column;
   }
 
+  .session-left {
+    padding-bottom: 0;
+  }
+
   .session-right {
     display: flex;
     align-items: center;
@@ -5387,10 +5399,13 @@ footer {
   .session-right {
     flex-direction: column;
     gap: 20px;
+    justify-content: center;
   }
 
   .session-right img {
     order: 2;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .session-overlay {
@@ -5401,5 +5416,38 @@ footer {
     width: calc(100% - 40px);
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .session-after .session-right {
+    justify-content: center;
+  }
+
+  .session-after .session-right img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .session-before .session-left {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .session-before h2 {
+    order: 1;
+  }
+
+  .session-before .session-important-box {
+    order: 2;
+    margin-top: 15px;
+    margin-bottom: 20px;
+  }
+
+  .session-before > .session-left > p,
+  .session-before > .session-left > ul {
+    order: 3;
+  }
+
+  .session-before .session-important-box svg {
+    display: none;
   }
 }
