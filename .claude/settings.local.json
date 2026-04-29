@@ -14,7 +14,8 @@
       "Bash(curl -s http://localhost:3000/prices)",
       "Bash(curl *)",
       "Bash(awk '/^@media.*768px/,/^@media/ {print NR\": \"$0}' /Users/sbochniak/code/furrytails/public/styles.css)",
-      "Bash(identify *)"
+      "Bash(identify *)",
+      "Bash(awk *)"
     ]
   }
 }

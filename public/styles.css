@@ -62,6 +62,10 @@ h1, h2, h3, h4, h5, h6 {
   font-family: 'Cochin', serif;
 }
 
+.logo a span {
+  line-height: 1.1;
+}
+
 .logo a:hover {
   opacity: 0.7;
 }
@@ -1168,6 +1172,27 @@ footer {
   }
 }
 
+@media (max-width: 1024px) {
+  .contact-hero-content {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+
+  .contact-info-box {
+    flex-direction: column;
+    padding: 25px 25px 0px 25px !important;
+  }
+
+  .contact-form-box {
+    padding: 25px;
+  }
+
+  .info-box-image {
+    width: 150px;
+    height: 210px;
+  }
+}
+
 @media (max-width: 768px) {
   .nav-links {
     gap: 1rem;
@@ -1325,6 +1350,44 @@ footer {
     width: 100% !important;
     height: auto !important;
     bottom: auto !important;
+  }
+}
+
+@media (max-width: 642px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 70px;
+    left: 0;
+    right: 0;
+    flex-direction: column;
+    gap: 0;
+    background-color: #f5f5f5;
+    padding: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-links li {
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+  }
+
+  .nav-links li:last-child {
+    border-bottom: none;
+  }
+
+  .nav-links a {
+    display: block;
+    color: #000;
+    font-size: 0.95rem;
   }
 }
 
@@ -1708,7 +1771,7 @@ footer {
   gap: 25px;
   max-width: 1200px;
   margin: 0 auto;
-  color: #fff;
+  color: #000;
   justify-content: space-between;
   background: #eb4c74;
   padding: 25px 30px;
@@ -1744,14 +1807,14 @@ footer {
 .social-text h2 {
   font-size: 1.4rem;
   font-weight: 700;
-  color: #fff;
+  color: #000;
   margin-bottom: 5px;
   font-family: 'Anton', sans-serif;
 }
 
 .social-text p {
   font-size: 0.9rem;
-  color: rgba(255, 255, 255, 0.95);
+  color: #000;
   font-family: 'Spectral', serif;
   line-height: 1.5;
 }
@@ -1786,11 +1849,14 @@ footer {
   }
 
   .info-box-image {
-    width: 150px;
-    height: 210px;
+    width: 240px;
+    height: 320px;
   }
 
-  .contact-info-box,
+  .contact-info-box {
+    padding: 25px 25px 0px 25px !important;
+  }
+
   .contact-form-box {
     padding: 25px;
   }
@@ -5044,10 +5110,45 @@ footer {
     flex: 0 0 auto;
   }
 
-  .footer-grid {
-    grid-template-columns: repeat(2, 1fr);
-    gap: 30px;
+  footer {
+    padding: 30px 20px 30px;
   }
+
+  .footer-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+
+  .footer-col:first-child {
+    grid-column: 1 / -1;
+    margin-bottom: 10px;
+  }
+
+  .footer-col:nth-child(4) {
+    grid-column: 1 / -1;
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .footer-col h4 {
+    font-size: 0.8rem;
+    margin-bottom: 10px;
+  }
+
+  .footer-col ul li {
+    margin-bottom: 8px;
+  }
+
+  .footer-col a {
+    font-size: 0.85rem;
+  }
+
+  .footer-cta {
+    padding: 8px 16px;
+    font-size: 0.75rem;
+  }
+
   .gallery-hero {
     padding: 15px 0;
     margin-bottom: 5px;
@@ -5329,6 +5430,7 @@ footer {
   .price-card-v3 {
     padding: 30px 20px;
     min-height: auto;
+    text-align: center;
   }
 
   .price-card-v3 h3 {
@@ -5337,10 +5439,29 @@ footer {
 
   .price-card-v3 .card-title {
     font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .price-card-v3 .card-desc {
+    text-align: center;
+  }
+
+  .card-price-section {
+    text-align: center;
+  }
+
+  .card-name,
+  .card-tagline,
+  .card-description {
+    text-align: center;
   }
 
   .card-features {
-    margin: 12px 0;
+    margin: 12px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: fit-content;
   }
 
   .card-features li {
