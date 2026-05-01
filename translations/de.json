@@ -1,0 +1,60 @@
+{
+  "nav": {
+    "gallery": "GALERIE",
+    "sessions": "SITZUNGEN",
+    "prices": "PREISE",
+    "about": "ÜBER UNS",
+    "contact": "KONTAKT"
+  },
+  "index": {
+    "title": "Furry Tails Fotografie - Haustierfotograf",
+    "card1": {
+      "h2_1": "Studio-Tierporträts.",
+      "h2_2": "Beeindruckend. Zeitlos.",
+      "p": "Gönnen Sie Ihrem Haustier eine professionelle Studioaufnahme voller Spaß, Leckerlis und perfekter Ergebnisse, die seinen einzigartigen Charakter unterstreichen.",
+      "btn1": "JETZT BUCHEN →",
+      "btn2": "GALERIE ANSEHEN →"
+    },
+    "card2": {
+      "h2_1": "Sauberes Setup. Perfektes Licht.",
+      "h2_2": "Keine Ablenkungen.",
+      "p": "Sorgfältig ausgewählte Hintergründe, sanfte Anleitung und Liebe zum Detail — damit der Fokus dort bleibt, wo er sein sollte.",
+      "subtle": "Unsicher, welche Sitzung passt? Fangen Sie hier an.",
+      "btn": "ARTEN VON SITZUNGEN →"
+    },
+    "card3": {
+      "h2": "Entspannte Sitzungen, im Tempo Ihres Haustieres.",
+      "p": "Egal ob Ihr Hund energiegeladen oder etwas unsicher ist, die Fotositzung passt sich an.",
+      "btn": "SO GEHT'S →"
+    },
+    "card4": {
+      "h2": "BEREIT, WENN SIE ES SIND",
+      "p": "Egal ob Sie buchen möchten oder nur ein paar Fragen haben, zögern Sie nicht, Kontakt aufzunehmen.",
+      "btn": "KONTAKT →"
+    },
+    "about": {
+      "greeting": "HALLO, ICH BIN ANNA.",
+      "title": "HAUSTIERFOTOGRAFIN IN BERLIN",
+      "p": "Ich schaffe lebendige, authentische Porträts für Haustiere und Menschen, die sie lieben. Die besten Fotos entstehen meist zwischen den Momenten. Darauf achte ich bei einer Sitzung.",
+      "btn": "MEHR ÜBER MICH →"
+    },
+    "features": {
+      "f1": {
+        "title": "NATÜRLICH & AUTHENTISCH",
+        "p": "Keine steifen Posen"
+      },
+      "f2": {
+        "title": "STUDIO ODER ZU HAUSE",
+        "p": "Sie wählen den Ort"
+      },
+      "f3": {
+        "title": "FLEXIBLE PAKETE",
+        "p": "Verschiedene Längen & Optionen"
+      }
+    },
+    "cta": {
+      "h2": "Bereit, die Persönlichkeit Ihres Haustieres einzufangen?",
+      "btn": "JETZT BUCHEN →"
+    }
+  }
+}

@@ -2,32 +2,51 @@ const express = require('express');
 const path = require('path');
 const app = express();
 
+const translations = {
+  en: require('./translations/en.json'),
+  de: require('./translations/de.json')
+};
+
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
 app.use(express.static(path.join(__dirname, 'public')));
 
+const renderPage = (req, res, page) => {
+  const lang = req.params.lang || 'en';
+  const t = translations[lang] || translations.en;
+  const path = req.path.replace(/^\/(en|de)/, '');
+  const otherLang = lang === 'en' ? 'de' : 'en';
+  const currentPath = path === '/' ? '' : path;
+  const template = lang === 'de' ? `${page}_de` : page;
+  res.render(template, { lang, t, currentPath, otherLang });
+};
+
 app.get('/', (req, res) => {
-  res.render('index');
+  res.redirect('/en/');
 });
 
-app.get('/how-it-works', (req, res) => {
-  res.render('how-it-works');
+app.get('/:lang', (req, res) => {
+  renderPage(req, res, 'index');
 });
 
-app.get('/about', (req, res) => {
-  res.render('about');
+app.get('/:lang/how-it-works', (req, res) => {
+  renderPage(req, res, 'how-it-works');
 });
 
-app.get('/prices', (req, res) => {
-  res.render('prices');
+app.get('/:lang/about', (req, res) => {
+  renderPage(req, res, 'about');
 });
 
-app.get('/gallery', (req, res) => {
-  res.render('gallery');
+app.get('/:lang/prices', (req, res) => {
+  renderPage(req, res, 'prices');
 });
 
-app.get('/contact', (req, res) => {
-  res.render('contact');
+app.get('/:lang/gallery', (req, res) => {
+  renderPage(req, res, 'gallery');
+});
+
+app.get('/:lang/contact', (req, res) => {
+  renderPage(req, res, 'contact');
 });
 
 const PORT = process.env.PORT || 3000;

@@ -1,0 +1,60 @@
+{
+  "nav": {
+    "gallery": "GALLERY",
+    "sessions": "SESSIONS",
+    "prices": "PRICES",
+    "about": "ABOUT",
+    "contact": "CONTACT"
+  },
+  "index": {
+    "title": "Furry Tails Photography - Pet Photographer",
+    "card1": {
+      "h2_1": "Studio pet portraits.",
+      "h2_2": "Brag-worthy. Timeless.",
+      "p": "Treat your pet to a professional studio session filled with play, treats and perfect results that highlight their unique character.",
+      "btn1": "BOOK A SESSION →",
+      "btn2": "VIEW GALLERY →"
+    },
+    "card2": {
+      "h2_1": "Clean setup. Perfect light.",
+      "h2_2": "No distractions.",
+      "p": "Carefully chosen backdrops, soft direction, and attention to detail — so the focus stays where it should be.",
+      "subtle": "Not sure which session fit? Start here.",
+      "btn": "TYPES OF SESSIONS →"
+    },
+    "card3": {
+      "h2": "Relaxed sessions, at your pet's pace.",
+      "p": "Whether your dog is energetic or a bit unsure, the photo session adapts to them.",
+      "btn": "HOW IT WORKS →"
+    },
+    "card4": {
+      "h2": "READY WHEN YOU ARE",
+      "p": "Whether you want to book or just have a few questions, feel free to get in touch.",
+      "btn": "CONTACT →"
+    },
+    "about": {
+      "greeting": "HI, I'M ANNA.",
+      "title": "A PET PHOTOGRAPHER BASED IN BERLIN",
+      "p": "I create vibrant, authentic portraits for pets and people who love them. Most of the time, the best photos happen in between moments. That's what I look for during a session.",
+      "btn": "MORE ABOUT ME →"
+    },
+    "features": {
+      "f1": {
+        "title": "NATURAL & AUTHENTIC",
+        "p": "No stiff poses"
+      },
+      "f2": {
+        "title": "STUDIO OR IN-HOME",
+        "p": "You choose the setting"
+      },
+      "f3": {
+        "title": "FLEXIBLE PACKAGES",
+        "p": "Different lengths & options"
+      }
+    },
+    "cta": {
+      "h2": "Ready to capture your pet's personality?",
+      "btn": "BOOK A SESSION →"
+    }
+  }
+}
