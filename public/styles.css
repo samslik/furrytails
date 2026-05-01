@@ -1081,7 +1081,7 @@ footer {
   }
 }
 
-@media (max-width: 1157px) and (min-width: 1025px) {
+@media (max-width: 1172px) and (min-width: 1025px) {
   .card-pink .card-image {
     width: 200px !important;
   }
@@ -1742,7 +1742,8 @@ footer {
   color: #000;
 }
 
-.contact-detail-item img {
+.contact-detail-item img,
+.contact-detail-item svg {
   width: 24px;
   height: 24px;
   flex-shrink: 0;
