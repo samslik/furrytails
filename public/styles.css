@@ -1247,7 +1247,7 @@ footer {
   }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 730px) {
   .nav-links {
     gap: 1rem;
     font-size: 0.8rem;
@@ -4750,7 +4750,7 @@ footer {
   justify-content: flex-start;
   align-items: center;
   background: #39a291;
-  padding: 20px 30px 30px 30px;
+  padding: 10px 30px 10px 30px;
 }
 
 .about-hero-text h2 {
@@ -4892,8 +4892,8 @@ footer {
 
 .cta-button {
   display: inline-block;
-  background-color: #fff;
-  color: #000;
+  background-color: #39a291;
+  color: #fff;
   padding: 12px 30px;
   border-radius: 25px;
   text-decoration: none;
@@ -4901,7 +4901,7 @@ footer {
   font-family: 'Inter', sans-serif;
   font-size: 0.9rem;
   transition: all 0.3s;
-  border: 2px solid #fff;
+  border: 2px solid #39a291;
 }
 
 .cta-button:hover {
