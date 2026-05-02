@@ -1090,6 +1090,11 @@ footer {
 }
 
 @media (max-width: 1024px) and (min-width: 769px) {
+  .card-teal .pet-img {
+    content: url('/gallery/hero1a.jpg');
+    padding-right: 30px;
+  }
+
   .hero-cards {
     flex-direction: column;
     gap: 25px;
