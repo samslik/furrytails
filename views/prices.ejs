@@ -264,43 +264,7 @@
     </section>
   </main>
 
-  <footer>
-    <div class="container">
-      <div class="footer-grid">
-        <div class="footer-col">
-          <div class="footer-logo">
-            <img src="/gallery/logo.jpeg" alt="Logo" width="30" height="30">
-            <span>Pet Photography</span>
-          </div>
-          <p>Capturing the joy and personality of your beloved pets.</p>
-        </div>
-        <div class="footer-col">
-          <h4>QUICK LINKS</h4>
-          <ul>
-            <li><a href="/<%= lang %>/gallery">Gallery</a></li>
-            <li><a href="/<%= lang %>/how-it-works">Sessions</a></li>
-            <li><a href="/<%= lang %>/prices">Prices</a></li>
-            <li><a href="/<%= lang %>/about">About</a></li>
-            <li><a href="/<%= lang %>/contact">Contact</a></li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <h4>LET'S CONNECT</h4>
-          <ul>
-            <li><a href="https://www.instagram.com/hundefotografberlin/" class="footer-instagram-link">Instagram <img src="/gallery/Instagram.png" alt="Instagram" class="footer-instagram-icon"></a></li>
-            <li><a href="mailto:hello@furrytails.com">hello@furrytails.com</a></li>
-            <li>Berlin, Prenzlauer Berg</li>
-          </ul>
-        </div>
-        <div class="footer-col">
-          <a href="/<%= lang %>/contact" class="footer-cta">BOOK A SESSION</a>
-        </div>
-      </div>
-      <div class="footer-bottom">
-        <p>&copy; 2026 Furry Tails Pet Photography. All rights reserved.</p>
-      </div>
-    </div>
-  </footer>
+  <%- include('footer') %>
 
   <script>
     const hamburger = document.getElementById('hamburger');
