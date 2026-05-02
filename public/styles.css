@@ -1420,7 +1420,7 @@ footer {
   }
 }
 
-@media (max-width: 642px) {
+@media (max-width: 715px) {
   .hamburger {
     display: flex;
   }
@@ -4720,7 +4720,7 @@ footer {
 /* About Hero Section */
 .about-hero {
   padding: 20px 0;
-  margin-bottom: 20px;
+  margin-bottom: 0;
 }
 
 .about-hero .container {
@@ -4777,17 +4777,20 @@ footer {
 }
 
 .about-text-and-image {
-  display: flex;
-  gap: 40px;
-  align-items: flex-start;
+  display: block;
 }
 
 .about-content {
-  flex: 1;
+  display: block;
+  overflow: auto;
+  padding-left: 40px;
 }
 
 .about-image {
-  flex: 0 0 300px;
+  float: right;
+  width: 300px;
+  margin-left: 40px;
+  margin-bottom: 20px;
 }
 
 .about-image img {
@@ -4800,7 +4803,7 @@ footer {
 .about-content h3 {
   font-family: 'Anton', sans-serif;
   font-size: 1.8rem;
-  margin: 30px 0 15px 0;
+  margin: 10px 0 15px 0;
   color: #000;
 }
 
@@ -4824,6 +4827,10 @@ footer {
 }
 
 @media (max-width: 768px) {
+  .about-content {
+    padding-left: 20px;
+  }
+
   .about-style-box {
     padding: 20px;
   }
