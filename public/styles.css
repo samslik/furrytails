@@ -1627,9 +1627,7 @@ footer {
   }
 
   .how-it-works-hero .hero-image {
-    flex: 1 1 auto !important;
-    width: auto !important;
-    max-width: 80%;
+    width: 80% !important;
     height: 250px !important;
   }
 
@@ -1637,15 +1635,6 @@ footer {
     width: 100% !important;
     height: 100% !important;
     object-fit: contain !important;
-  }
-}
-
-@media (max-width: 1024px) {
-  .how-it-works-hero .hero-image {
-    flex: 0 1 auto !important;
-    width: auto !important;
-    max-width: 40%;
-    min-width: 200px;
   }
 }
 
@@ -1992,8 +1981,7 @@ footer {
   display: flex;
   align-items: stretch;
   gap: 0;
-  height: auto;
-  max-height: 250px;
+  height: 280px;
   overflow: hidden;
 }
 
