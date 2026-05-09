@@ -2,6 +2,8 @@ name = "furrytails"
 main = "cf-index.js"
 compatibility_date = "2024-12-16"
 compatibility_flags = ["nodejs_compat"]
+workers_dev = true
+preview_urls = true
 
 [build]
 command = "npm run build"
@@ -9,4 +11,7 @@ cwd = "."
 
 [env.production]
 name = "furrytails-prod"
-route = "furry-tails.de/*"
+workers_dev = false
+routes = [
+  { pattern = "furry-tails.de/*", zone_name = "furry-tails.de" }
+]
