@@ -1,4 +1,5 @@
 import express from 'express';
+import path from 'path';
 
 const app = express();
 
@@ -53,6 +54,4 @@ app.get('/:lang/contact', (req, res) => {
   renderPage(req, res, 'contact');
 });
 
-export default {
-  fetch: app
-};
+export default app;
