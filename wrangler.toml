@@ -21,3 +21,6 @@ build_output_dir = "dist"
 [observability]
 enabled = true
 
+# Static assets
+[assets]
+directory = "./dist"
