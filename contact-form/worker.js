@@ -26,8 +26,9 @@ export default {
                 'Content-Type': 'application/json'
             },
             body: JSON.stringify({
-                from: `${email}`,
+                from: 'noreply@furry-tails.de',
                 to: 'hello@furry-tails.de',
+                reply_to: email,
                 subject: `New contact form submission from ${name}`,
                 html: `<p><strong>From:</strong> ${name}</p><p><strong>Email:</strong> ${email}</p><p><strong>Phone:</strong> ${phone || 'Not provided'}</p><p><strong>Message:</strong></p><p>${message}</p>`
             })
