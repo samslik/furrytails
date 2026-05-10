@@ -1,0 +1,27 @@
+# Adds IntelliSense/validation in VS Code
+"$schema" = "node_modules/wrangler/config-schema.json"
+
+name = "furrytails"
+main = "server.js" # The entry point to your worker
+compatibility_date = "2026-05-10"
+
+# Essential if you're porting a Node/Express app
+compatibility_flags = ["nodejs_compat"]
+
+# New for 2026: Explicitly declare which secrets your app needs
+#[secrets]
+#required = ["DATABASE_URL", "STRIPE_KEY"]
+
+## Standard Environment Variables (Non-sensitive)
+#[vars]
+#API_URL = "https://api.example.com"
+#NODE_ENV = "production"
+
+# Observability (New default recommendation)
+[observability]
+enabled = true
+
+# If you are hosting a static version (Workers Assets)
+ [assets]
+ directory = "./public"
+ binding = "ASSETS"

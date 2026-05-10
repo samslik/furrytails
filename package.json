@@ -2,6 +2,7 @@
   "name": "furrytails",
   "version": "1.0.0",
   "description": "",
+  "type": "module",
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
@@ -13,5 +14,8 @@
   "dependencies": {
     "ejs": "^5.0.2",
     "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "wrangler": "^4.90.0"
   }
 }
