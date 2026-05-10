@@ -4,10 +4,6 @@
 name = "furrytails"
 compatibility_date = "2026-05-10"
 
-# Build settings for static site
-build = { command = "npm run build", cwd = "." }
-build_output_dir = "dist"
-
 # New for 2026: Explicitly declare which secrets your app needs
 #[secrets]
 #required = ["DATABASE_URL", "STRIPE_KEY"]
