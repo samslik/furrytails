@@ -61,22 +61,5 @@ Jedes Shooting begleite ich mit viel Ruhe und Geduld, und jedes einzelne Bild be
   </main>
 
   <%- include('footer_de') %>
-
-  <script>
-    const hamburger = document.getElementById('hamburger');
-    const navLinks = document.getElementById('nav-links');
-
-    hamburger.addEventListener('click', () => {
-      hamburger.classList.toggle('active');
-      navLinks.style.display = navLinks.style.display === 'flex' ? 'none' : 'flex';
-    });
-
-    navLinks.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => {
-        hamburger.classList.remove('active');
-        navLinks.style.display = 'none';
-      });
-    });
-  </script>
 </body>
 </html>

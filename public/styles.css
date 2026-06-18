@@ -95,6 +95,15 @@ h1, h2, h3, h4, h5, h6 {
   color: #666;
 }
 
+.nav-links a.zeeg-link {
+  color: #F97316;
+  font-weight: 800;
+}
+
+.nav-links a.zeeg-link:hover {
+  color: #d96210;
+}
+
 .lang-switcher {
   margin-left: auto;
   padding-left: 1.5rem;
