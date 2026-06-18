@@ -1,0 +1,60 @@
+<!-- Cookie Consent by TermsFeed https://www.TermsFeed.com -->
+<script type="text/javascript" src="https://www.termsfeed.com/public/cookie-consent/4.2.0/cookie-consent.js" charset="UTF-8"></script>
+<script type="text/javascript" charset="UTF-8">
+document.addEventListener('DOMContentLoaded', function () {
+cookieconsent.run({"notice_banner_type":"interstitial","consent_type":"express","palette":"light","language":"<%= lang %>","page_load_consent_levels":["strictly-necessary"],"notice_banner_reject_button_hide":false,"preferences_center_close_button_hide":false,"page_refresh_confirmation_buttons":false,"website_name":"furry-tails.de"});
+});
+</script>
+<noscript>Free cookie consent management tool by <a href="https://www.termsfeed.com/">TermsFeed</a></noscript>
+<!-- End Cookie Consent by TermsFeed https://www.TermsFeed.com -->
+
+<!-- Meta Pixel Code (Consent-gated) -->
+<script>
+  function initializeMetaPixel() {
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '2868115730203974');
+    fbq('track', 'PageView');
+  }
+
+  function hasTrackingConsent() {
+    var cookies = document.cookie.split(';');
+    for (var i = 0; i < cookies.length; i++) {
+      var cookie = cookies[i].trim();
+      if (cookie.startsWith('cookie_consent_level=')) {
+        try {
+          var consentData = JSON.parse(decodeURIComponent(cookie.substring('cookie_consent_level='.length)));
+          return consentData.tracking === true;
+        } catch (e) {
+          return false;
+        }
+      }
+    }
+    return false;
+  }
+
+  function checkAndInitPixel() {
+    if (hasTrackingConsent() && !window.fbq) {
+      initializeMetaPixel();
+    }
+  }
+
+  document.addEventListener('DOMContentLoaded', function () {
+    setTimeout(checkAndInitPixel, 500);
+  });
+
+  window.addEventListener('cc_onConsent', function() {
+    checkAndInitPixel();
+  });
+</script>
+<!-- End Meta Pixel Code -->
+
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=2868115730203974&ev=PageView&noscript=1"
+/></noscript>
