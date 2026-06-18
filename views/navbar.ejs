@@ -1,3 +1,8 @@
+<!-- Zeeg popup script start -->
+<link href="https://assets.zeeg.me/embed.min.css" rel="stylesheet" />
+<script type="text/javascript" src="https://assets.zeeg.me/embed.min.js"></script>
+<!-- Zeeg popup script end -->
+
 <nav class="navbar">
   <div class="container">
     <div class="logo">
@@ -12,6 +17,7 @@
       <span></span>
     </button>
     <ul class="nav-links" id="nav-links">
+      <li><a href="" class="zeeg-link" onclick="Zeeg.initPopupWidget({ url: 'https://zeeg.me/samslik/pet-photography-session', utm: { 'source': null, 'medium': null, 'campaign': null, 'content': null, 'term': null }});return false;"><%= t.nav.bookSession %></a></li>
       <li><a href="/<%= lang %>/gallery/"><%= t.nav.gallery %></a></li>
       <li><a href="/<%= lang %>/how-it-works/"><%= t.nav.sessions %></a></li>
       <li><a href="/<%= lang %>/prices/"><%= t.nav.prices %></a></li>
